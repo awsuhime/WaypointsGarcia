@@ -24,7 +24,7 @@ public class FollowWaypoint : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, tracker.transform.position) < lookAhead)
         {
-            if (Vector3.Distance(tracker.transform.position, transform.position) < 5f)
+            if (Vector3.Distance(tracker.transform.position, waypoints[currentWayPoint].transform.position) < 5f)
             {
                 currentWayPoint++;
                 if (currentWayPoint == waypoints.Length)
