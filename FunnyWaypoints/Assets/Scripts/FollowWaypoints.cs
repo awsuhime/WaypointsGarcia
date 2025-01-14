@@ -20,13 +20,12 @@ public class FollowWaypoints : MonoBehaviour
         wps = wpManager.GetComponent<WaypointManager>().waypoints;
         g = wpManager.GetComponent<WaypointManager>().graph;
         currentNode = wps[3];
-        Invoke("GoToSpire", 2);
     }
 
     public void GoToHeli()
     {
         g.AStar(currentNode, wps[3]);
-        currentWP = 3;
+        currentWP = 0;
 
         
     }
@@ -34,19 +33,19 @@ public class FollowWaypoints : MonoBehaviour
     public void GoToSpire()
     {
         g.AStar(currentNode, wps[2]);
-        currentWP = 2;
+        currentWP = 0;
     }
 
     public void GoToNowhere()
     {
         g.AStar(currentNode, wps[5]);
-        currentWP = 5;
+        currentWP = 0;
     }
 
     public void GoToFactory()
     {
         g.AStar(currentNode, wps[4]);
-        currentWP = 4;
+        currentWP = 0;
     }
 
     void LateUpdate()
