@@ -1260,7 +1260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761980786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FollowWaypoints, Assembly-CSharp
         m_MethodName: GoToSpire
         m_Mode: 1
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761980786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FollowWaypoints, Assembly-CSharp
         m_MethodName: GoToHeli
         m_Mode: 1
@@ -1742,7 +1742,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4133282, y: 1.657383, z: 2.1057386}
   m_Center: {x: 0.0262537, y: 0.8644688, z: 0.06936526}
---- !u!114 &1761980786
+--- !u!114 &1761980788
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1751,11 +1751,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1761980784}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f170ca202b5a345b17de70e76a9173, type: 3}
+  m_Script: {fileID: 11500000, guid: ecaf6016533a00643a37cb765283b54d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
-  rotSpeed: 10
   wpManager: {fileID: 275528666}
 --- !u!1 &1769594355
 GameObject:
@@ -1841,7 +1839,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761980786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FollowWaypoints, Assembly-CSharp
         m_MethodName: GoToFactory
         m_Mode: 1
@@ -2245,7 +2243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761980786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FollowWaypoints, Assembly-CSharp
         m_MethodName: GoToHeli
         m_Mode: 1
@@ -2379,7 +2377,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1761980786}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FollowWaypoints, Assembly-CSharp
         m_MethodName: GoToNowhere
         m_Mode: 1
