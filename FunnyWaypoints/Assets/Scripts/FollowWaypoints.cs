@@ -5,24 +5,19 @@ using UnityEngine.AI;
 
 public class FollowWaypoints : MonoBehaviour {
 
-    // Transform goal;
-    // float speed = 5.0f;
-    // float accuracy = 5.0f;
-    // float rotSpeed = 2.0f;
+   
 
     GameObject[] wps;
     GameObject currentNode;
     NavMeshAgent agent;
 
-    // int currentWP = 0;
-    // Graph g;
+    
 
     public GameObject wpManager;
 
     void Start() {
         Time.timeScale = 5.0f;
         wps = wpManager.GetComponent<WaypointManager>().waypoints;
-        // g = wpManager.GetComponent<WPManager>().graph;
         currentNode = wps[0];
 
         agent = GetComponent<NavMeshAgent>();
@@ -32,23 +27,22 @@ public class FollowWaypoints : MonoBehaviour {
 
     public void GotoHeli() {
 
-        //g.AStar(currentNode, wps[0]);
-        //currentWP = 0;
-        GotoHere(0);
+        GotoHere(3);
     }
 
-    public void GotoRuin() {
+    public void GotoNowhere() {
 
         //g.AStar(currentNode, wps[7]);
         //currentWP = 0;
-        GotoHere(7);
+
+        GotoHere(5);
     }
 
     public void GotoRock() {
 
         //g.AStar(currentNode, wps[1]);
         //currentWP = 0;
-        GotoHere(1);
+        GotoHere(2);
     }
 
     public void GotoFactory() {
@@ -65,31 +59,6 @@ public class FollowWaypoints : MonoBehaviour {
 
     void LateUpdate() {
 
-        //if (g.pathList.Count == 0 || currentWP == g.pathList.Count) return;
-
-        //currentNode = g.getPathPoint(currentWP);
-
-        //if (Vector3.Distance(g.pathList[currentWP].getID().transform.position, transform.position) < accuracy) {
-
-        //    currentWP++;
-        //}
-
-        //if (currentWP < g.pathList.Count) {
-
-        //    goal = g.pathList[currentWP].getID().transform;
-        //    Vector3 lookAtGoal = new Vector3(
-        //        goal.position.x,
-        //        transform.position.y,
-        //        goal.position.z);
-
-        //    Vector3 direction = lookAtGoal - this.transform.position;
-
-        //    transform.rotation = Quaternion.Slerp(
-        //        this.transform.rotation,
-        //        Quaternion.LookRotation(direction),
-        //        Time.deltaTime * rotSpeed);
-
-        //    transform.Translate(0.0f, 0.0f, speed * Time.deltaTime);
-        //}
+        
     }
 }
